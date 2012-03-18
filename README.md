@@ -71,6 +71,10 @@ smugofile_image.mako is also accessible to smugofile_index.mako.
 
     controllers.smugofile_gallery.smugofile_file = "mypath/smugofile.json"
 
+Every time you add or remove an album or make changes to an album on SmugMug you
+need to rerun mugofile.py with your SmugMug nick name so you get all the new 
+changes from your SmugMug. 
+
 # Revison history #
 
 * 0.0.1 (2012-03-16) - Created Smugofile.
