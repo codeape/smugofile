@@ -20,15 +20,15 @@ galleries. These scripts are under  BSD 2-Clause License (see LICENSE file)
 2. Go to the directory where you unpacked or cloned Smugofile
 3. Copy the files of Smugofile to the corresponding directory in Blogofile:
 
-    cp -Rv _* /path/to/blog/root
-    _smugofile -> /path/to/blog/root/_smugofile
-    _smugofile/smugofile.py -> /path/to/blog/root/_smugofile/smugofile.py
-    _templates -> /path/to/blog/root/_templates
-    ...
+        cp -Rv _* /path/to/blog/root
+        _smugofile -> /path/to/blog/root/_smugofile
+        _smugofile/smugofile.py -> /path/to/blog/root/_smugofile/smugofile.py
+        _templates -> /path/to/blog/root/_templates
+        ...
 
 4. Add the following line to your Blogofile _config.py:
 
-    controllers.smugofile_gallery.enabled = True
+        controllers.smugofile_gallery.enabled = True
 
 5. Copy or rename all the file ending with .mako.x to end with .mako in the 
    _templates folder of your Blogofile installation. You should also make 
@@ -58,18 +58,18 @@ smugofile_image.mako is also accessible to smugofile_index.mako.
 1. Enter the _smugofile directory of your Blogofile installation.
 2. Good to know. You can always run: 
 
-    smugofile -h
+        smugofile -h
 
 3. Then run:
 
-    mugofile.py smugmug_nick_name
+        mugofile.py smugmug_nick_name
 
 4. This will generate a file called smugofile.json which contains the data 
    fetched from SmugMug. By default the smugofile_gallery.py controller will 
    look in the _smugofile directory for smugofile.json but you can change this 
    by setting a path up in your Blogofile _config.py:
 
-    controllers.smugofile_gallery.smugofile_file = "mypath/smugofile.json"
+        controllers.smugofile_gallery.smugofile_file = "mypath/smugofile.json"
 
 Every time you add or remove an album or make changes to an album on SmugMug you
 need to rerun mugofile.py with your SmugMug nick name so you get all the new 
@@ -77,5 +77,5 @@ changes from your SmugMug.
 
 # Revison history #
 
-* 0.0.1 (2012-03-16) - Created Smugofile.
+* 0.0.1 (2012-03-17) - Created Smugofile.
 
