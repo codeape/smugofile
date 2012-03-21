@@ -10,7 +10,7 @@ import sys
 import json
 import os
 
-app_version="0.0.1"
+app_version="0.0.2"
 api_key="GyxzE1JizQ6ZYIWsL9CbThbUoQyslYgH"
 api_url="http://api.smugmug.com/services/api/xmlrpc/1.3.0/"
 
